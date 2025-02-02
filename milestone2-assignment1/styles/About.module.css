@@ -1,0 +1,145 @@
+#section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-container {
+    padding: 100px;
+}
+
+#section1-h1 {
+    font-weight: bold;
+    text-align: center;
+    line-height: 55px;
+}
+
+#h1-span {
+    color: #8976FD;
+}
+
+#section1-p {
+    color: #332c5c;
+    text-align: center;
+}
+
+@media (min-width: 1440px) {
+    #main-container {
+        min-width: 1440px;
+        padding: 100px;
+    }
+
+    #section1-h1 {
+        font-size: 56px;
+        line-height: 55px;
+        margin-bottom: 8px;
+    }
+
+    #section2 {
+        flex-direction: row;
+    }
+
+    .subdiv h2 {
+        font-size: 24px;     
+    }
+
+    .subdiv p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+    #main-container {
+        min-width: 1024px;
+        padding: 80px;
+    }
+
+    #section2 {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #section1-h1 {
+        line-height: 35px;
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #main-container {
+        min-width: 768px;
+        padding: 50px;
+    }
+
+    #section2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #section1-h1 {
+        line-height: 28px;
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    #main-container {
+        min-width: 320px;
+        padding: 16px;
+    }
+
+    #section2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+        align-items: center;
+    }
+
+    #section1-h1 {
+        line-height: 20px;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .subdiv h2 {
+        font-size: 18px;     
+    }
+
+    .subdiv p {
+        font-size: 14px;
+    }
+}
+
+#section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.subdiv h2 {
+    font-weight: bold;
+    
+}
+
+.subdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ededed;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+
+.subdiv p {
+    color: #332c5c;
+}

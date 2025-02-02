@@ -1,0 +1,270 @@
+#section1-h1-span {
+    color: #8976FD;
+  }
+  
+  #section1-h1 {
+    font-weight: bold;
+    font-family: "Poppins", serif;
+  }
+  
+  /* Section 1 */
+  
+  /* For xl  */
+  @media (min-width: 1440px) {
+    #main-container {
+      min-width: 1440px;
+    }
+  
+    #section1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 100px;
+      align-items: center;
+    }  
+  
+    #section1-h1 {
+      font-size: 56px; 
+      font-weight: bold;
+      font-family: "Poppins", serif;
+    }
+  
+    #section1-img {
+      width: 600px;
+      height: 627px;
+    }
+  }
+  
+  /* For lg */
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    #main-container {
+      min-width: 1024px;
+    }
+  
+    #section1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 50px 16px;
+      align-items: center;
+    }
+  
+    #section1-h1 {
+      font-size: 44px; 
+      font-weight: bold;
+      font-family: "Poppins", serif;
+      width: 500px;
+    }
+  
+    #section1-img {
+      width: 500px;
+      height: 500px;
+    }
+  }
+  
+  /* For md */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #main-container {
+      min-width: 768px;
+    }
+  
+    #section1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 50px;
+      align-items: center;
+    }
+  
+    #section1-h1 {
+      font-size: 30px; 
+      font-weight: bold;
+      font-family: "Poppins", serif;
+    }
+  
+    #section1-img {
+      width: 290px;
+      height: 250px;
+    }
+  }
+  
+  /* For sm */
+  @media (min-width: 320px) and (max-width: 767px) {
+    #main-container {
+      min-width: 320px;
+    }
+  
+    #section1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 50px 16px;
+      align-items: center;
+    }
+  
+    #section1-h1 {
+      font-size: 24px; 
+      font-weight: bold;
+      font-family: "Poppins", serif;
+      size: 24px;
+    }
+  
+    #section1-img {
+      width: 290px;
+      height: 250px;
+    }
+  }
+  
+  /* Section 2 */
+  
+  .section2_sub {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .section2_sub_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  
+  }
+  
+  #sub-1 {
+    background: #C06EF3;
+  }
+  
+  #sub-2 {
+    background: #FDBA09;
+  }
+  
+  #sub-3 {
+    background: #6DEDC3;
+  }
+  
+  /* for xl */
+  @media (min-width: 1440px) {
+    #section2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 100px;
+    }
+  
+    .section2_sub_left {
+      width: 128px;
+      height: 128px;
+    }
+  
+    .icon {
+      font-size: 60px;
+    }
+  
+    .para1 {
+      font-size: 48px;
+    }
+  
+    .para2 {
+      font-size: 18px;
+    }
+  }
+  
+  
+  @media (min-width: 1024px) and (max-width: 1339px) {
+    #section2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+    }
+  
+    .section2_sub_left {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .icon {
+      font-size: 40px;
+    }
+  
+    .para1 {
+      font-size: 30px;
+    }
+  
+    .para2 {
+      font-size: 15;
+    }
+  }
+  
+  
+  .para1 {
+    color: #332C5C;
+    font-weight: 600;
+  }
+  
+  .para2 {
+    color: #5E587A;
+    font-family: "Nunito Sans", serif;
+  }
+  
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #section2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+    }
+  
+    .section2_sub_left {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .icon {
+      font-size: 25px;
+    }
+  
+    .para1 {
+      font-size: 20px;
+    }
+  
+    .para2 {
+      font-size: 12;
+    }
+  }
+  
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    #section2 {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 16px;
+    }
+  
+    .section2_sub_left {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .icon {
+      font-size: 25px;
+    }
+  
+    .para1 {
+      font-size: 20px;
+    }
+  
+    .para2 {
+      font-size: 12;
+    }
+  }
+  
