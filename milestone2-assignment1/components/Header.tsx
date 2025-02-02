@@ -67,10 +67,10 @@ const Header = () => {
 
           {/* Mobile Navigation Links */}
           <nav className={styles.mobileNav}>
-            <Link href="" onClick={toggleMenu}>
+            <Link href="/" onClick={toggleMenu}>
               Home
             </Link>
-            <Link href="" onClick={toggleMenu}>
+            <Link href="/About" onClick={toggleMenu}>
               About us
             </Link>
             <Link href="" onClick={toggleMenu}>
