@@ -20,6 +20,27 @@
     font-size: 24px;
 }
 
+.mobileLinks {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#mobile-div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 250px;
+    width: 150px;
+    background: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    z-index: 50;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px;
+    gap: 15px;
+}
+
 @media (min-width: 1440px) {
     #main-container {
         min-width: 1440px;

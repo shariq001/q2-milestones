@@ -2,13 +2,14 @@ import React from 'react'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import styles from '../styles/Home.module.css'
 
 const Home = () => {
   return (
-    <div className='xl:px-[150px] sm:px-[10px] md:px-[30px] xl:min-w-[1440px] sm:min-w-[320px] md:min-w-[768px] lg:min-w-[1024px] lg:px-[50px]'>
+    <div id={styles['main']} >
       
       {/* Section 1 */}
-      <div className='flex lg:flex-row xl:justify-around xl:py-[100px] sm:py-[50px] sm:flex-col sm:items-center sm:justify-start sm:gap-[30px] '>
+      <div id={styles['section1']}>
 
         {/* Left */}
         <div className='xl:w-[50%] sm:w-full sm:text-center'>

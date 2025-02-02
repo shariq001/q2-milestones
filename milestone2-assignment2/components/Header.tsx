@@ -30,7 +30,7 @@ const Header = () => {
 
       {/* Sidebar Menu */}
       {isMenuOpen && (
-        <div className='fixed top-0 right-0 h-[250px] w-[150px] bg-white bg-opacity-90 shadow-lg z-50 flex flex-col px-6 py-8 space-y-4'>
+        <div id={styles['mobile-div']} >
           {/* Close Button */}
           <div className='w-full flex justify-end'>
             <button onClick={toggleMenu} className={styles.toggleButtons}>
@@ -42,28 +42,28 @@ const Header = () => {
           <Link
             href='/'
             onClick={toggleMenu}
-            className='text-[18px] font-medium hover:text-gray-500'
+            className={styles.mobileLinks}
           >
             Work
           </Link>
           <Link
             href='/About'
             onClick={toggleMenu}
-            className='text-[18px] font-medium hover:text-gray-500'
+            className={styles.mobileLinks}
           >
             About
           </Link>
           <Link
             href=''
             onClick={toggleMenu}
-            className='text-[18px] font-medium hover:text-gray-500'
+            className={styles.mobileLinks}
           >
             Playground
           </Link>
           <Link
             href=''
             onClick={toggleMenu}
-            className='text-[18px] font-medium hover:text-gray-500'
+            className={styles.mobileLinks}
           >
             Contact
           </Link>
