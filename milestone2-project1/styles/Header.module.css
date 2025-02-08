@@ -1,0 +1,35 @@
+#main {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 80px;
+    align-items: center;
+    border-bottom: 2px solid rgb(218, 218, 218);
+}
+
+#main h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #868585;
+}
+
+#main nav {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+#main nav button {
+    background: #FD6F00;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+#main nav a:hover {
+    background: rgb(193, 193, 193);
+    transition-duration: 0.5s;
+    padding: 8px;
+    border-radius: 10px;
+}

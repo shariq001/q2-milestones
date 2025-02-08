@@ -1,0 +1,44 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+#main p {
+    font-size: 20px;
+    text-align: center;
+}
+
+#main h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#main form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+#main form label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#main form input, 
+#main form textarea  {
+    background: #ebebeb;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+#main form button {
+    background: #FD6F00;
+    padding: 10px 24px;
+    border-radius: 5px;
+    color: #fff;
+}
