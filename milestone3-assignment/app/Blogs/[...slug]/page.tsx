@@ -61,7 +61,17 @@ type BlogPost = {
 const BlogPost = () => {
   const { slug } = useParams();
   const [darkMode, setDarkMode] = useState(true);
-  const [post, setPost] = useState<BlogPost | null>(null); // Ensure post is a single object, not an array
+  const [post, setPost] = useState<BlogPost | null>(null);
+
+  const [comments, setComments] = useState<string[]>([]);
+  const [text, setText] = useState('');
+
+  const addComment = () => {
+    if (text.trim()) {
+      setComments([...comments, text]);
+      setText('');
+    }
+  };
 
   useEffect(() => {
     if (slug) {
@@ -180,6 +190,23 @@ const BlogPost = () => {
                   color: darkMode ? "#ffffff" : "#000000",
                 }}
                  href='https://www.linkedin.com/in/muhammad---shariq' className="underline text-white " target="_blank" >LinkedIn</Link> for more insights on Web Development and AI! Share this article with your fellow developers and AI enthusiasts!</p>
+
+                <div className="flex flex-col gap-[10px]">
+                      <h1 className=" lg:text-[26px] font-bold sm:text-[18px] md:text-[21px]">Comments</h1>
+                      <ul className="bg-white text-black p-[10px] rounded-md font-semibold">
+                        {comments.map((comment, i) => (
+                          <li key={i} >{i + 1}: {comment}</li>
+                        ))}
+                      </ul>
+                      <input 
+                        type="text" 
+                        value={text} 
+                        onChange={(e) => setText(e.target.value)} 
+                        placeholder="Add a comment..." 
+                        className="px-[15px] py-[10px] rounded-md border-none outline-none text-black"
+                      />
+                      <button onClick={addComment} className="w-[20%] bg-[#853376] py-[10px] rounded-[5px] font-semibold">Post</button>
+                  </div>
             </div>
 
             <div className="h-full flex items-center justify-center xl:px-[52px] sm:px-[20px] md:max-w-[800px]">
